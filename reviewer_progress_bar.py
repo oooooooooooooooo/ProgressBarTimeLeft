@@ -73,10 +73,10 @@ show_number = config['show_number']  # DEFAULT: 1 Show the progress text as a fr
 show_yesterday = config['show_yesterday']  # DEFAULT: 1 Show yesterday's values in parentheses
 show_debug = config['show_debug']  # DEFAULT: 0 Show New/Lrn/Rev Weights used for computation
 
-qtxt = "aliceblue"  # Percentage color, if text visible.
-qbg = "rgba(0, 0, 0, 0)"  # Background color of progress bar.
-qfg = "#3399cc"  # Foreground color of progress bar.
-qbr = 5  # Border radius (> 0 for rounded corners).
+qtxt = config['qtxt']  # Percentage color, if text visible.
+qbg = config['qbg']  # Background color of progress bar.
+qfg = config['qfg']  # Foreground color of progress bar.
+qbr = config['qbr']  # Border radius (> 0 for rounded corners).
 
 # optionally restricts progress bar width
 maxWidth = 20  # (e.g. "5px". default: "")
