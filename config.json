@@ -1,12 +1,29 @@
 {
+    "dockArea": "Qt.TopDockWidgetArea",
+    "forceForward": 0, # (set to 0 or 1) When you press again on a learnt card the bar moves back since the card goes back into learning. Setting to 1 prevents this behavior if not desired.
+    "includeLrn": "True",
+    "includeNew": "True",
+    "includeRev": "True",
+    "includeNewAfterRevs": "True",
+    "invertTF": "", # If set to True, inverts and goes from right to left or top to bottom
+    "lrnWeight": 2,
     "lrn_steps": 2,
+    "maxWidth": 20, #Adjust how tall the progress bar is in px
+    "newWeight": 4,
     "no_days": 7,
-    "show_debug": 0,
-    "tz": 8,
-    "show_percent": 1,
-    "show_retention": 1,
-    "show_super_mature_retention": 1,
-    "show_again": 1,
-    "show_number": 1,
-    "show_yesterday": 1
+    "orientationHV": "Qt.Horizontal",
+    "qfg": "#3399cc",#change foreground color
+    "qbg": "rgba(0, 0, 0, 0)", #change background color
+    "qtxt": "#FFFFFF", #change text color
+    "qbr": "5", #change radius of the sides of the bar
+    "revWeight": 1,
+    "scrollingBarWhenEditing": "True",
+    "show_again": 0, #show number of times again is pressed
+    "show_debug": 0, #show the weights for Learning, Review, and New for debugging
+    "show_number": 1, #show numbers on progress bar
+    "show_percent": 0, #add percentages to some numbers in the progress bar
+    "show_retention": 0,
+    "show_super_mature_retention": 0,
+    "show_yesterday": 0,
+    "tz": 2 #Change those to your timezone in GMT (use negative number if you are in a GMT- timezone)
 }
