@@ -79,7 +79,7 @@ qfg = "#3399cc"  # Foreground color of progress bar.
 qbr = 5  # Border radius (> 0 for rounded corners).
 
 # optionally restricts progress bar width
-maxWidth = 20  # (e.g. "5px". default: "")
+maxWidth = config['maxWidth'] # (e.g. "5px". default: "")
 
 scrollingBarWhenEditing = 1  # Make the progress bar 'scrolling' when waiting to resume.
 
@@ -193,7 +193,7 @@ def add_info():
     global rev_weight
 
     lrn_weight = float((1 + (1 * x_learn_agains * lrn_steps)) / 1)
-    new_weight = float((1 + (1 * x_new_agains * lrn_steps)) / 1)
+    new_weight = 2 #new cards are usually done again when learning setting a flat amount is more consistent and accurate to how they are done
     rev_weight = float((1 + (1 * tr * lrn_steps)) / 1)
 
 
